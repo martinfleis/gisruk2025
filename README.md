@@ -21,16 +21,28 @@ within your user account (e.g. `My Documents`, not `C:\`).
 
 ### Step 2: Install the required Python packages
 
-You can set the environment to run the notebook in a few ways - Pixi (recommended), Conda/Mamba, uv / pip.
+You can set the environment to run the notebook in a few ways - Pixi (recommended) uv (also recommended[^1]), Conda/Mamba, pip.
+
+[^1]: I prefer Pixi as it installs packages from conda-forge which are using same binaries of compiled dependencies. uv installs from PyPI, so each package will bring its own version.
 
 #### Pixi
 
 If you'd like to run the notebook, you can create an environment using [Pixi](https://pixi.sh/latest/). See the Pixi [installation instructions](https://pixi.sh/latest/#__tabbed_1_2).
 
-With Pixi installed, clone the repository, open a command line, and start Jupyter Lab from the included Pixi environment. Pixi will automatically install all required dependencies and start the Jupyter Lab IDE with the notebook.
+With Pixi installed, open a command line and start Jupyter Lab from the included Pixi environment. Pixi will automatically install all required dependencies and start the Jupyter Lab IDE with the notebook.
 
 ```sh
 pixi run jupyter lab workshop.ipynb
+```
+
+#### uv
+
+If you'd like to run the notebook, you can create an environment using [`uv`](https://docs.astral.sh/uv/). See the `uv` [installation instructions](https://docs.astral.sh/uv/getting-started/installation/).
+
+With `uv` installed, open a command line, and start Jupyter Lab from the included `uv` environment. `uv` will automatically install all required dependencies and start the Jupyter Lab IDE with the notebook.
+
+```sh
+uv run jupyter lab workshop.ipynb
 ```
 
 #### Conda/Mamba
@@ -63,9 +75,9 @@ jupyter lab workshop.ipynb
 
 In case you do not want to install everything and just want to try out the course material, use the environment setup by Binder [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/martinfleis/gisruk2025/main?urlpath=lab/) and open the notebook right away. Note that the performance may not be optimal.
 
-#### uv / pip / Google Colab
+#### pip / Google Colab
 
-You can also install the necessary dependencies from PyPI using `pip`. The instructions can be used both locally and within Google Colab. With `uv`, just prepend `pip` commands with `uv` to get `uv pip ...`.
+You can also install the necessary dependencies from PyPI using `pip`. The instructions can be used both locally and within Google Colab.
 
 ```bash
 pip install momepy scikit-learn numba osmnx geopy matplotlib mapclassify folium clustergram bokeh geoplanar neatnet
@@ -82,3 +94,7 @@ Then you can start the notebook.
 ```sh
 jupyter lab workshop.ipynb
 ```
+
+## Data
+
+This repository contains a subset of data retrieved from the [CDRC](https://data.cdrc.ac.uk/dataset/index-multiple-deprivation-imd#data-and-resources) under UK Open Government Licence (OGL). Data provided by the Consumer Data Research Centre, an ESRC Data Investment: ES/L011840/1, ES/L011891/1.
