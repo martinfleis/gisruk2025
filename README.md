@@ -71,11 +71,9 @@ Then you can start the notebook.
 jupyter lab workshop.ipynb
 ```
 
-#### MyBinder
-
-In case you do not want to install everything and just want to try out the course material, use the environment setup by Binder [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/martinfleis/gisruk2025/main?urlpath=lab/) and open the notebook right away. Note that the performance may not be optimal.
-
 #### pip / Google Colab
+
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinfleis/gisruk2025/blob/main/workshop.ipynb)
 
 You can also install the necessary dependencies from PyPI using `pip`. The instructions can be used both locally and within Google Colab.
 
