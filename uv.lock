@@ -594,7 +594,7 @@ requires-dist = [
     { name = "jupyterlab", specifier = ">=4.4.0" },
     { name = "mapclassify", specifier = ">=2.8.1" },
     { name = "matplotlib", specifier = ">=3.10.1" },
-    { name = "momepy", specifier = ">=0.9.1" },
+    { name = "momepy", specifier = ">=0.10.0" },
     { name = "neatnet", specifier = ">=0.0.5" },
     { name = "numba", specifier = ">=0.61.2" },
     { name = "osmnx", specifier = ">=2.0.2" },
@@ -1227,7 +1227,7 @@ wheels = [
 
 [[package]]
 name = "momepy"
-version = "0.9.1"
+version = "0.10.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "geopandas" },
@@ -1238,9 +1238,9 @@ dependencies = [
     { name = "shapely" },
     { name = "tqdm" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/d9/96/ebfced62eb6ced9dc398c459e4597bb6ef4df37551d4186fc242ebd9e763/momepy-0.9.1.tar.gz", hash = "sha256:12da07e606ee695b216e506e4cc3d6ab386328bec27acc9d694ac5dd71376ff4", size = 30084606 }
+sdist = { url = "https://files.pythonhosted.org/packages/64/40/16038d3bd3785813cb49b44345517cff320ec917b223dc601883d3edfe85/momepy-0.10.0.tar.gz", hash = "sha256:d7b62de1ee420518491ce3cd2bc21815a149cc2a5e6132f122486e8542a74248", size = 30085049 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/f0/62/772a17a5e689d0f81e1dda40e06c94a84faf0cb12fe623f0992f08a0a991/momepy-0.9.1-py3-none-any.whl", hash = "sha256:8947a48c9e9b624dedad2d2044c6da1d4dc65ade4d3943ea6e3411ff28ef5114", size = 1734936 },
+    { url = "https://files.pythonhosted.org/packages/f6/6d/8cc4a8b0504f28bc947890b67d9e1dd3c1c512e51d34fac843b482defe08/momepy-0.10.0-py3-none-any.whl", hash = "sha256:45a4ad8de3ba1e14d964e20c1f8b0339fb37b3ae8cd4aab7153635d83337a4e9", size = 1735159 },
 ]
 
 [[package]]
